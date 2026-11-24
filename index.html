@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbara Muniz Soares — Climate-Tech Business Leader</title>
+<meta name="description" content="Barbara Muniz Soares — climate-tech business leader. Enterprise, financial and public-sector sales, partnerships and climate risk intelligence in Brazil and Latin America.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1A1A; --text:#2E2E2E; --muted:#6E6A63; --accent:#5C5346;
+    --rule:#D8D3CB; --rule-strong:#C8C2B8; --bg:#FBFAF7; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"EB Garamond",Garamond,Georgia,serif;background:var(--bg);color:var(--text);font-size:19px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule-strong);transition:border-color .2s,color .2s}
+  a:hover{color:var(--ink);border-color:var(--ink)}
+  .wrap{max-width:920px;margin:0 auto;padding:0 32px}
+
+  nav{position:sticky;top:0;background:rgba(251,250,247,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+  nav .mark{font-size:15px;letter-spacing:.32em;color:var(--ink);border:0}
+  nav ul{list-style:none;display:flex;gap:26px}
+  nav ul a{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);border:0}
+  nav ul a:hover{color:var(--ink)}
+
+  header.hero{padding:120px 0 72px;border-bottom:1px solid var(--rule-strong)}
+  .hero h1{font-weight:400;font-size:clamp(34px,6vw,58px);letter-spacing:.16em;color:var(--ink);line-height:1.15}
+  .hero .tag{font-style:italic;color:var(--accent);font-size:21px;margin-top:18px}
+  .hero .lead{max-width:680px;margin-top:34px;font-size:21px;color:var(--text)}
+  .hero .contact{margin-top:34px;font-size:15px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 22px}
+  .hero .contact span.sep{color:var(--rule-strong)}
+
+  section{padding:76px 0 8px}
+  h2{font-size:14px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--ink);padding-bottom:12px;border-bottom:1px solid var(--rule);margin-bottom:34px}
+
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-bottom:1px solid var(--rule)}
+  .stat{padding:30px 14px 26px;border-right:1px solid var(--rule)}
+  .stat:last-child{border-right:0}
+  .stat b{display:block;font-weight:400;font-size:38px;color:var(--ink);line-height:1}
+  .stat span{display:block;font-size:14.5px;color:var(--muted);margin-top:10px;line-height:1.35}
+
+  .about p{max-width:720px;margin-bottom:18px}
+
+  .work{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .card{background:var(--card);border:1px solid var(--rule);padding:28px 28px 24px;display:flex;flex-direction:column}
+  .card .k{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+  .card h3{font-weight:500;font-size:23px;color:var(--ink);margin:8px 0 12px;line-height:1.25}
+  .card p{font-size:17.5px}
+  .card ul{list-style:none;margin-top:14px;font-size:16.5px;color:var(--text)}
+  .card li{padding-left:18px;position:relative;margin-bottom:5px}
+  .card li::before{content:"–";position:absolute;left:0;color:var(--muted)}
+  .card .tags{margin-top:auto;padding-top:18px;font-size:14px;font-style:italic;color:var(--accent)}
+
+  .gallery-intro{max-width:680px;margin-bottom:30px}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:34px 26px}
+  .shot figure{margin:0}
+  .shot a.img{display:block;border:1px solid var(--rule);background:#fff;overflow:hidden}
+  .shot a.img:hover{border-color:var(--rule-strong)}
+  .shot img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;transition:transform .4s}
+  .shot a.img:hover img{transform:scale(1.015)}
+  .shot figcaption{padding-top:14px}
+  .shot .k{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+  .shot h3{font-weight:500;font-size:21px;color:var(--ink);margin:6px 0 6px;line-height:1.25}
+  .shot p{font-size:16.5px}
+  .shot.wide{grid-column:1 / -1}
+  .videos{display:grid;grid-template-columns:1fr;gap:44px;margin-bottom:64px}
+  .video video{display:block;width:100%;height:auto;border:1px solid var(--rule);background:#111}
+  .video figcaption{padding-top:14px;max-width:720px}
+  .video .k{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+  .video h3{font-weight:500;font-size:23px;color:var(--ink);margin:6px 0 6px;line-height:1.25}
+  .video p{font-size:17px}
+  .subhead{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}
+
+  .role{display:grid;grid-template-columns:170px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--rule)}
+  .role:last-child{border-bottom:0}
+  .role .when{font-size:15px;color:var(--muted);padding-top:4px}
+  .role h3{font-weight:500;font-size:23px;color:var(--ink)}
+  .role .title{font-style:italic;color:var(--accent);margin-bottom:12px}
+  .role ul{list-style:none}
+  .role li{padding-left:18px;position:relative;margin-bottom:7px;font-size:17.5px}
+  .role li::before{content:"–";position:absolute;left:0;color:var(--muted)}
+  .role li b{font-weight:600;color:var(--ink)}
+
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
+  .skills h3{font-weight:600;font-size:18px;color:var(--ink);margin-bottom:6px}
+  .skills p{font-size:17px}
+
+  .edu div{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px dotted var(--rule)}
+  .edu div:last-child{border-bottom:0}
+  .edu b{font-weight:500;color:var(--ink)}
+  .edu i{color:var(--muted)}
+  .edu .y{color:var(--muted);font-size:15.5px;white-space:nowrap}
+  .awards{margin-top:28px;font-size:17.5px}
+  .awards p{margin-bottom:8px}
+  .awards b{font-weight:600;color:var(--ink)}
+
+  footer{margin-top:90px;border-top:1px solid var(--rule-strong);padding:56px 0 70px}
+  footer h2{border:0;padding:0;margin-bottom:16px}
+  footer p{font-size:21px;max-width:620px}
+  footer .contact{margin-top:22px;font-size:16px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 22px}
+  footer .fine{margin-top:48px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+  @media (max-width:760px){
+    body{font-size:18px}
+    nav ul{display:none}
+    header.hero{padding:80px 0 56px}
+    .stats{grid-template-columns:1fr 1fr}
+    .stat{border-bottom:1px solid var(--rule)}
+    .stat:nth-child(2n){border-right:0}
+    .work,.skills,.gallery{grid-template-columns:1fr}
+    .role{grid-template-columns:1fr;gap:6px}
+    .edu div{flex-direction:column;gap:2px}
+    .hero .contact span.sep{display:none}
+    .hero .contact{flex-direction:column;gap:6px;align-items:flex-start}
+  }
+  @media print{
+    nav{display:none} body{background:#fff} .card{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="mark" href="#top">B · M · S</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#tools">Platform</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <h1>BARBARA MUNIZ SOARES</h1>
+    <p class="tag">Climate-Tech Business Leader &nbsp;·&nbsp; Enterprise &amp; Public-Sector Sales &nbsp;·&nbsp; Partnerships &amp; Market Expansion</p>
+    <p class="lead">I turn climate risk into decisions that banks, insurers, investors and governments can act on — and build the business around it.</p>
+    <p class="contact">
+      <span>Belo Horizonte – MG, Brazil</span><span class="sep">·</span>
+      <a href="mailto:barbara.munizz@gmail.com">barbara.munizz@gmail.com</a><span class="sep">·</span>
+      <span>+55 31 99121-7483</span><span class="sep">·</span>
+      <!-- Replace # with your LinkedIn profile URL -->
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>10+</b><span>years in B2B and public-sector sales</span></div>
+    <div class="stat"><b>R$&nbsp;10M+</b><span>ARR portfolio managed at Superbac</span></div>
+    <div class="stat"><b>400+</b><span>market conversations with banks, insurers and consultancies</span></div>
+    <div class="stat"><b>4</b><span>Latin American countries in adaptation-finance work</span></div>
+    <div class="stat"><b>40&nbsp;yrs</b><span>of observed data used to validate risk indicators</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <h2>About</h2>
+    <p>I have spent more than ten years selling technology and environmental solutions to enterprises, financial institutions and governments in Brazil and Latin America. Since 2023 I have been building Saltica, a climate risk intelligence company for banks, insurers, funds and municipalities, where I own P&amp;L, sales, partnerships and product.</p>
+    <p>Before that, I managed strategic accounts of R$&nbsp;10M+ ARR at Superbac — Cargill, Coamo, C.Vale, Banco do Brasil — and long-term carbon and nature-based projects with World Bank and IDB stakeholders at Ecosecurities. I am a biologist (B.Sc. and M.Sc., UFMG) and a 2026 Halcyon LAC Climate Intensive Fellow.</p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected Work</h2>
+    <div class="work">
+
+      <article class="card">
+        <span class="k">Enterprise · Insurance &amp; Banking</span>
+        <h3>Climate risk for the financial sector</h3>
+        <p>Opened the Brazilian market for climate risk data through 400+ conversations with banks, insurers, consultancies, brokers and developers.</p>
+        <ul>
+          <li>Paid insurer pilot, closed after a 12-month cycle</li>
+          <li>Proof of Concept with a major insurer, followed by work across three of its business lines in 2026</li>
+          <li>Data-as-a-Service volumes scoped with an insurer (20,000 analyses/year) and an investment bank (5,000)</li>
+        </ul>
+        <p class="tags">Enterprise sales · Pricing · Data-as-a-Service</p>
+      </article>
+
+      <article class="card">
+        <span class="k">Public Sector</span>
+        <h3>City-wide climate risk for Contagem (MG)</h3>
+        <p>Climate risk measurement for the Municipal Environment Secretariat, with official technical capacity certificates.</p>
+        <ul>
+          <li>9 hazards across the city’s 8 districts</li>
+          <li>Baseline to 2080 under three IPCC AR6 scenarios</li>
+          <li>Interactive web dashboard and technical training for municipal staff</li>
+        </ul>
+        <p class="tags">Government · Adaptation · Capacity building</p>
+      </article>
+
+      <article class="card">
+        <span class="k">Product</span>
+        <h3>Foote — climate intelligence platform</h3>
+        <p>Product and methodology lead of a platform for credit and insurance portfolios in Brazil, in Portuguese, English and Spanish.</p>
+        <ul>
+          <li>CLIMADA-based physical risk indicators and SSP scenarios</li>
+          <li>Central Bank of Brazil Resolution BCB 586/2026 and IFRS S1/S2 mapped to platform data points</li>
+          <li>~54-indicator crosswalk across 21 CNAE sectors</li>
+        </ul>
+        <p class="tags">Product · Regulation · Disclosure</p>
+      </article>
+
+      <article class="card">
+        <span class="k">Methodology</span>
+        <h3>Validating risk against what really happened</h3>
+        <p>Backtesting protocol that checks climate indicators against observed Brazilian data and ERA5, so users see how much to trust each hazard.</p>
+        <ul>
+          <li>48 points, 1985–2025</li>
+          <li>Confidence labels per hazard, shown in the platform</li>
+        </ul>
+        <p class="tags">Validation · Data quality</p>
+      </article>
+
+      <article class="card">
+        <span class="k">Monitoring &amp; Alerts</span>
+        <h3>Hyperlocal monitoring network</h3>
+        <p>National network of 100 analysis points across Brazil’s six biomes, delivered through data partners.</p>
+        <ul>
+          <li>Points chosen for biome and hazard coverage</li>
+          <li>Hourly, 5-day rainfall bulletin for the operations of the SP Open WTA 250 tennis tournament in São Paulo</li>
+        </ul>
+        <p class="tags">Monitoring · Early warning · Operations</p>
+      </article>
+
+      <article class="card">
+        <span class="k">Partnerships &amp; Cross-Border</span>
+        <h3>Partners, multilaterals and foundations</h3>
+        <p>Channel and data partnerships with international providers, and proposals for climate finance institutions across the region.</p>
+        <ul>
+          <li>Climada channel partner in Brazil for 2 years (3 deals closed)</li>
+          <li>Proposals for WRI Brasil (Brazil, Colombia, Mexico, Chile), OpenEarth and ClimateWorks</li>
+          <li>Requirements from 20+ institutions (World Bank, CAF, BDMG) turned into technical specs</li>
+        </ul>
+        <p class="tags">Channels · Multilaterals · Latin America</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>Platform &amp; Tools</h2>
+    <p class="gallery-intro">Working products and client-facing tools I designed and built with AI-assisted development, to turn climate data into something a manager, analyst or investor can use the same day.</p>
+
+    <p class="subhead">Video walkthroughs</p>
+    <div class="videos">
+
+      <!-- ===== VIDEO 1 — copy from here ===== -->
+      <figure class="video">
+        <video controls muted playsinline preload="none" poster="assets/videos/foote-setup.jpg">
+          <source src="assets/videos/foote-setup.mp4" type="video/mp4">
+        </video>
+        <figcaption>
+          <span class="k">Foote · Product</span>
+          <h3>Foote: setting up a portfolio and its risk appetite</h3>
+          <p>How a bank or insurer configures the platform: materiality, reference scenario, time horizons, financial tolerance and the hazards that count — then registers projects and points and sees the results.</p>
+        </figcaption>
+      </figure>
+      <!-- ===== VIDEO 1 — copy to here ===== -->
+
+      <figure class="video">
+        <video controls muted playsinline preload="none" poster="assets/videos/foote-analysis.jpg">
+          <source src="assets/videos/foote-analysis.mp4" type="video/mp4">
+        </video>
+        <figcaption>
+          <span class="k">Foote · Product</span>
+          <h3>Foote: decision queue and portfolio reporting</h3>
+          <p>Each location gets a recommendation against the risk appetite — approve, adjust or review — with the hazards behind it. The portfolio view shows main threats, 2030 and 2050 trends, a heat map and a map of the assets at risk.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p class="subhead">Tools</p>
+    <div class="gallery">
+
+      <figure class="shot wide">
+        <a class="img" href="assets/adaptabrasil-explorer.jpg" target="_blank" rel="noopener"><img src="assets/adaptabrasil-explorer.jpg" alt="Climate threats by municipality: AdaptaBrasil indicators for Porto Alegre, current and 2030/2050 scenarios" loading="lazy"></a>
+        <figcaption>
+          <span class="k">Public data · Municipalities</span>
+          <h3>Climate threats by municipality</h3>
+          <p>Query tool over 27 AdaptaBrasil (MCTI) threat indicators for all 5,570 Brazilian municipalities, today and in 2030/2050 scenarios, with a national ranking and CSV export.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <a class="img" href="assets/backtesting-dashboard.jpg" target="_blank" rel="noopener"><img src="assets/backtesting-dashboard.jpg" alt="Backtesting dashboard comparing CLIMADA ratings with observed data" loading="lazy"></a>
+        <figcaption>
+          <span class="k">Validation</span>
+          <h3>Backtesting: model × observed</h3>
+          <p>Dashboard that shows how well each climate hazard rating matches observed data, filterable by state, point and hazard.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <a class="img" href="assets/adaptation-finance-brief.jpg" target="_blank" rel="noopener"><img src="assets/adaptation-finance-brief.jpg" alt="Saltica capability brief for adaptation finance" loading="lazy"></a>
+        <figcaption>
+          <span class="k">Business development</span>
+          <h3>Capability brief for adaptation finance</h3>
+          <p>Two-page brief positioning Saltica’s climate risk work for the Green Climate Fund and its accredited entities.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="role">
+      <div class="when">2023 – Present</div>
+      <div>
+        <h3>Saltica</h3>
+        <p class="title">Founder · Business, Product &amp; Partnerships Lead</p>
+        <ul>
+          <li><b>Company building &amp; P&amp;L.</b> Pricing, unit economics, supplier contracts and a monthly close on accrual and cash basis.</li>
+          <li><b>Non-dilutive funding.</b> R$ 651k project submitted to the Teia SPRINT call for early warning in 6 municipalities of Rio Grande do Sul.</li>
+          <li><b>Investors &amp; consultancies.</b> R$ 40k advisory engagement for an investment fund; repeat diagnostics for an environmental consultancy.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="when">2021 – 2023</div>
+      <div>
+        <h3>Ecosecurities</h3>
+        <p class="title">Business Development &amp; Strategic Accounts Manager (LATAM)</p>
+        <ul>
+          <li><b>Long-term partnerships.</b> 15–40-year emission-reduction and Nature-Based Solutions projects with landholders, agricultural groups and financial institutions.</li>
+          <li><b>Multilaterals &amp; investors.</b> Relationships with World Bank, IDB and investors; milestones, risk registers and multi-currency budgets.</li>
+          <li><b>Cross-functional delivery.</b> Climate scientists, carbon accountants, engineering, legal and finance across parallel projects.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="when">2015 – 2021</div>
+      <div>
+        <h3>Superbac Biotechnology Solutions</h3>
+        <p class="title">Senior Strategic Accounts &amp; Public Sector Manager</p>
+        <ul>
+          <li><b>Strategic accounts, R$ 10M+ ARR.</b> Retained key partnerships and exceeded annual revenue targets.</li>
+          <li><b>Complex buyers.</b> C-level, operations and procurement at Cargill, C.Vale, Coamo, Credicitrus and Banco do Brasil.</li>
+          <li><b>Public contracts.</b> Urban and environmental contracts and operations, with KPIs, SLAs and impact goals.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Core Competencies</h2>
+    <div class="skills">
+      <div><h3>Business leadership &amp; P&amp;L</h3><p>Building a company from zero; pricing and unit economics; partner contracts; grant proposals; lean operating model.</p></div>
+      <div><h3>Enterprise &amp; public-sector sales</h3><p>Full-cycle B2B sales with 12–18-month cycles; insurers, banks, funds, cooperatives, trading companies and municipalities.</p></div>
+      <div><h3>Partnerships &amp; cross-border</h3><p>International climate-data providers; multilateral and U.S. networks (Halcyon, IDB LAB, BNDES, ABDE).</p></div>
+      <div><h3>Climate risk &amp; regulation</h3><p>CLIMADA, SSP and NGFS scenarios; IFRS S1/S2; BCB 586/2026; Brazilian Sustainable Taxonomy; GHG Protocol and MRV.</p></div>
+      <div><h3>Languages</h3><p>Portuguese (native) · English (fluent) · Spanish (advanced).</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education &amp; Awards</h2>
+    <div class="edu">
+      <div><span><b>M.Sc. in Biotechnological Product Development</b> <i>— Federal University of Minas Gerais (UFMG)</i></span><span class="y">2010 – 2013</span></div>
+      <div><span><b>Specialization in Integrated Quality and Environmental Management</b> <i>— PUC-MG</i></span><span class="y">2010 – 2011</span></div>
+      <div><span><b>B.Sc. in Biological Sciences</b> <i>— Federal University of Minas Gerais (UFMG)</i></span><span class="y">2005 – 2009</span></div>
+    </div>
+    <div class="awards">
+      <p><b>Awards.</b> 2026 Halcyon LAC Climate Intensive Fellow · Innovation Incentive Award, Acceleration Program – Climate Crisis (Assembleia Legislativa).</p>
+      <p><b>Recent courses.</b> Applying the IFRS Sustainability Disclosure Standards (SSE Academy / CDP) · Managing and Reporting on Nature (SSE Academy / CDP) · De-risking Brazil: Instruments for Transition Finance (ANBIMA).</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Open to conversations about climate-tech growth in Brazil and the Americas.</p>
+    <p class="contact">
+      <a href="mailto:barbara.munizz@gmail.com">barbara.munizz@gmail.com</a>
+      <span>+55 31 99121-7483</span>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+    <p class="fine">Barbara Muniz Soares · Belo Horizonte, Brazil</p>
+  </div>
+</footer>
+
+</body>
+</html>
